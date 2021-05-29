@@ -62,7 +62,7 @@ Public Class Form1
         Shell("explorer " + path, AppWinStyle.NormalFocus)
     End Sub
     Sub ShowDialog(ByRef programName As String, ByRef dlPath As String, ByVal btn As Button)
-        Select Case MsgBox("Deseja instalar agora?", MsgBoxStyle.YesNo, programName + " - Download concluído")
+        Select Case MsgBox("Install now?", MsgBoxStyle.YesNo, programName + " - Download completed")
             Case MsgBoxResult.Yes
                 Process.Start(dlPath, AppWinStyle.NormalFocus)
             Case MsgBoxResult.No
